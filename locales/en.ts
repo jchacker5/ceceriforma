@@ -1,0 +1,127 @@
+export const en = {
+  navigation: {
+    home: "Home",
+    feed: "Feed",
+    issues: "Issues",
+    events: "Events",
+    about: "About",
+    contact: "Contact",
+    volunteer: "Volunteer",
+    donate: "Donate",
+  },
+  home: {
+    latestUpdates: "Latest Updates",
+    stayConnected: "Stay connected with the campaign",
+  },
+  about: {
+    title: "About Steven V. Ceceri",
+    subtitle: "A lifetime of service to the South Coast community",
+    myStory: "My Story",
+    communityLeader: "Community Leader",
+    provenResults: "Proven Results",
+    familyValues: "Family Values",
+    careerTimeline: "Career Timeline",
+    endorsements: "Endorsements",
+    personalLife: "Personal Life",
+    downloadResume: "Download Resume",
+    proudToBeEndorsed: "Proud to be Endorsed By:",
+  },
+  issues: {
+    title: "Issues & Priorities",
+    subtitle: "Common-sense solutions for the challenges facing our district",
+  },
+  events: {
+    title: "Campaign Events",
+    subtitle:
+      "Join us at an upcoming event to meet Steven and discuss the issues.",
+  },
+  feed: {
+    title: "Campaign Feed",
+    subtitle:
+      "Stay up-to-date with the latest news and updates from the campaign trail, all in one place.",
+    endOfFeed: "You've reached the end of the feed.",
+    subscribeRss: "Subscribe via RSS",
+  },
+  contact: {
+    title: "Contact Us",
+    subtitle:
+      "We want to hear from you. Reach out with questions, concerns, or to get involved in the campaign.",
+    headquarters: "Campaign Headquarters",
+    phone: "Phone",
+    email: "Email",
+    officeHours: "Office Hours",
+    sendMessage: "Send Us a Message",
+    getInvolved: "Get Involved",
+    volunteer: "Volunteer",
+    donate: "Donate",
+    spreadTheWord: "Spread the Word",
+    messageSent: "Message sent!",
+    thankYou: "Thank you for contacting us. We'll get back to you soon.",
+  },
+  donate: {
+    title: "Support Our Campaign",
+    subtitle:
+      "Your contribution helps us reach voters, share our message, and build a stronger future for the 8th Bristol District. Every dollar makes a difference.",
+    grassroots: "Grassroots Campaign",
+    communityFirst: "Community First",
+    secureTransparent: "Secure & Transparent",
+    makeContribution: "Make a Contribution",
+    chooseAmount: "Choose an amount below or enter a custom amount",
+    financeDisclosure: "Campaign Finance Disclosure",
+    financeDisclosureText:
+      "Contributions to Steven V. Ceceri for State Representative are not tax-deductible. Massachusetts law requires us to collect and report the name, address, occupation, and employer of individuals whose contributions exceed $200 in a calendar year. Corporate contributions are prohibited. Maximum individual contribution is $1,000 per calendar year.",
+  },
+  volunteer: {
+    title: "Join Our Team",
+    subtitle:
+      "Every campaign is powered by dedicated volunteers. Join us in building a stronger future for the 8th Bristol District. Together, we can make a real difference.",
+    howYouCanHelp: "How You Can Help",
+    whyVolunteer: "Why Volunteer?",
+    signUp: "Sign Up to Volunteer",
+    fillForm:
+      "Fill out the form below and we'll be in touch with volunteer opportunities that match your interests and availability.",
+    makeImpact: "Make a direct impact on your community",
+    meetNeighbors: "Meet like-minded neighbors and build connections",
+    gainExperience: "Gain valuable experience in civic engagement",
+    bePart: "Be part of positive change in the 8th Bristol District",
+  },
+  hero: {
+    heading: "Common-sense leadership for the South Coast",
+    subheading:
+      "Steven V. Ceceri brings decades of experience and a commitment to practical solutions for the 8th Bristol District. Together, we can build a stronger future for Westport, Fall River, Freetown, Acushnet, and New Bedford.",
+    readMyPlan: "Read My Plan",
+    donateToday: "Donate Today",
+    district: "8th Bristol District",
+    districtAreas:
+      "Westport · Fall River Pcts A/C · Freetown · Acushnet · New Bedford",
+  },
+  issuesCarousel: {
+    heading: "Key Issues",
+    subtitle:
+      "Common-sense solutions for the challenges facing the 8th Bristol District",
+    previous: "Previous",
+    next: "Next",
+    viewAll: "View All Issues",
+  },
+  testimonials: {
+    heading: "What People Are Saying",
+    subtitle: "Hear from community leaders who know Steven's work",
+    cta: "Want to share your story?",
+    contactUs: "Contact us",
+  },
+  footer: {
+    slogan: "Common-sense leadership for the South Coast",
+    quickLinks: "Quick Links",
+    getInvolved: "Get Involved",
+    signUpVolunteer: "Sign Up to Volunteer",
+    contact: "Contact",
+    campaignHeadquarters: "Campaign Headquarters",
+    rightsReserved: "All rights reserved.",
+    district: "8th Bristol District",
+    privacyPolicy: "Privacy Policy",
+    termsOfService: "Terms of Service",
+    paidForBy: "Paid for by Steven V. Ceceri for State Representative.",
+    disclaimer:
+      "This communication is not authorized by any candidate or candidate's committee. Contributions to Steven V. Ceceri for State Representative are not tax-deductible. Massachusetts law requires us to collect and report the name, address, occupation, and employer of individuals whose contributions exceed $200 in a calendar year.",
+  },
+};
