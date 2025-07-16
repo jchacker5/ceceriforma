@@ -20,7 +20,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link href="https://youtube.com/@cecerep" className="text-gray-300 hover:text-white">
-                <Youtube className="h-5 w-5" />
+                
               </Link>
             </div>
           </div>
@@ -82,17 +82,17 @@ export function Footer() {
             <div className="space-y-2 text-gray-300">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@ceceriforma.com</span>
+                <span>steven@ceceriforma.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>(508) 555-0123</span>
+                <span>(401) 419-1781</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-1" />
                 <div>
                   <p>Campaign Headquarters</p>
-                  <p>123 Main Street</p>
+                  <p>1822 North Main Street, Second Floor Annex Suite 001</p>
                   <p>Fall River, MA 02720</p>
                 </div>
               </div>
