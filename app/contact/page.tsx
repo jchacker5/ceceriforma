@@ -55,7 +55,7 @@ export default function ContactPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold">info@ceceriforstaterep.com</p>
+                <p className="text-lg font-semibold">info@ceceriforma.com</p>
                 <p className="text-sm text-gray-600">General Inquiries</p>
               </CardContent>
             </Card>
