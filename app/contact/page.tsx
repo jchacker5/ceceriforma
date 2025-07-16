@@ -1,26 +1,14 @@
-"use client";
-
-import { ContactForm } from "@/components/contact-form";
-import { useTranslation } from "@/components/language-provider";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { ContactForm } from "@/components/contact-form"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export default function ContactPage() {
-  const { t } = useTranslation();
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">
-          {t.contact.title}
-        </h1>
+        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">Contact Us</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          {t.contact.subtitle}
+          We want to hear from you. Reach out with questions, concerns, or to get involved in the campaign.
         </p>
       </div>
 
@@ -35,9 +23,7 @@ export default function ContactPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <p className="font-semibold">
-                  Steven V. Ceceri for State Representative
-                </p>
+                <p className="font-semibold">Steven V. Ceceri for State Representative</p>
                 <p>123 Main Street</p>
                 <p>Fall River, MA 02720</p>
               </div>
@@ -69,9 +55,7 @@ export default function ContactPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold">
-                  info@ceceriforstaterep.com
-                </p>
+                <p className="text-lg font-semibold">info@ceceriforma.com</p>
                 <p className="text-sm text-gray-600">General Inquiries</p>
               </CardContent>
             </Card>
@@ -100,8 +84,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <p className="text-sm text-gray-600 mt-4">
-                *Hours may vary during campaign events. Call ahead to confirm
-                availability.
+                *Hours may vary during campaign events. Call ahead to confirm availability.
               </p>
             </CardContent>
           </Card>
@@ -112,8 +95,7 @@ export default function ContactPage() {
             <CardHeader>
               <CardTitle className="text-2xl">Send Us a Message</CardTitle>
               <CardDescription>
-                Have a question or want to share your thoughts? We'd love to
-                hear from you.
+                Have a question or want to share your thoughts? We'd love to hear from you.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -128,8 +110,7 @@ export default function ContactPage() {
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">Get Involved</CardTitle>
             <CardDescription className="text-blue-100">
-              There are many ways to support our campaign and make a difference
-              in the community
+              There are many ways to support our campaign and make a difference in the community
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -137,22 +118,19 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-lg mb-2">Volunteer</h3>
                 <p className="text-blue-100 text-sm">
-                  Join our team of dedicated volunteers helping to spread our
-                  message throughout the district.
+                  Join our team of dedicated volunteers helping to spread our message throughout the district.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">Donate</h3>
                 <p className="text-blue-100 text-sm">
-                  Support our grassroots campaign with a contribution that helps
-                  us reach more voters.
+                  Support our grassroots campaign with a contribution that helps us reach more voters.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">Spread the Word</h3>
                 <p className="text-blue-100 text-sm">
-                  Follow us on social media and help share our message with
-                  friends and neighbors.
+                  Follow us on social media and help share our message with friends and neighbors.
                 </p>
               </div>
             </div>
@@ -160,5 +138,5 @@ export default function ContactPage() {
         </Card>
       </div>
     </div>
-  );
+  )
 }
