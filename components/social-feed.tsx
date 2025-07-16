@@ -3,12 +3,12 @@
 import { useState, useEffect } from "react"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Twitter, Facebook, Instagram, Youtube } from "lucide-react"
+import { ExternalLink, X, Facebook, Instagram, Youtube } from "lucide-react"
 import Link from "next/link"
 
 interface SocialPost {
   id: string
-  platform: "twitter" | "facebook" | "instagram" | "youtube" | "blog"
+  platform: "x" | "facebook" | "instagram" | "youtube" | "blog"
   content: string
   published_at: string
   media_url?: string
@@ -21,7 +21,7 @@ interface SocialFeedProps {
 }
 
 const platformIcons = {
-  twitter: Twitter,
+  x: X,
   facebook: Facebook,
   instagram: Instagram,
   youtube: Youtube,
@@ -29,7 +29,7 @@ const platformIcons = {
 }
 
 const platformColors = {
-  twitter: "text-blue-500",
+  x: "text-gray-900",
   facebook: "text-blue-600",
   instagram: "text-pink-500",
   youtube: "text-red-500",
@@ -40,11 +40,11 @@ const platformColors = {
 const mockPosts: SocialPost[] = [
   {
     id: "1",
-    platform: "twitter",
+    platform: "x",
     content:
       "Great turnout at today's town hall in Westport! Thank you to everyone who came out to discuss the issues that matter most to our community. Together, we can build a stronger future for the 8th Bristol District. #CeceriForStateRep",
     published_at: "2024-01-15T10:30:00Z",
-    external_url: "https://twitter.com/cecerep/status/1",
+    external_url: "https://x.com/StevenCeceri/status/1",
     author: "Steven V. Ceceri",
   },
   {
@@ -88,11 +88,11 @@ const mockPosts: SocialPost[] = [
   },
   {
     id: "6",
-    platform: "twitter",
+    platform: "x",
     content:
       "Veterans Day reminder: Our veterans deserve our unwavering support. I'm committed to expanding access to healthcare, job training, and housing assistance for those who served our country.",
     published_at: "2024-01-10T11:00:00Z",
-    external_url: "https://twitter.com/cecerep/status/2",
+    external_url: "https://x.com/StevenCeceri/status/2",
     author: "Steven V. Ceceri",
   },
 ]

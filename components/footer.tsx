@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react"
+import { Facebook, X, Instagram, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -13,15 +13,13 @@ export function Footer() {
               <Link href="https://facebook.com/cecerep" className="text-gray-300 hover:text-white">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="https://twitter.com/cecerep" className="text-gray-300 hover:text-white">
-                <Twitter className="h-5 w-5" />
+              <Link href="https://x.com/StevenCeceri" className="text-gray-300 hover:text-white">
+                <X className="h-5 w-5" />
               </Link>
               <Link href="https://instagram.com/cecerep" className="text-gray-300 hover:text-white">
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="https://youtube.com/@cecerep" className="text-gray-300 hover:text-white">
-                
-              </Link>
+              <Link href="https://youtube.com/@cecerep" className="text-gray-300 hover:text-white"></Link>
             </div>
           </div>
 
