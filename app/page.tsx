@@ -1,3 +1,5 @@
+"use client";
+
 import { Hero } from "@/components/hero";
 import { IssuesCarousel } from "@/components/issues-carousel";
 import { useTranslation } from "@/components/language-provider";

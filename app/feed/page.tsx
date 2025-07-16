@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslation } from "@/components/language-provider";
 import { SocialFeed } from "@/components/social-feed";
 import { Rss } from "lucide-react";

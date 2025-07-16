@@ -1,3 +1,5 @@
+"use client";
+
 import { DonationForm } from "@/components/donation-form";
 import { useTranslation } from "@/components/language-provider";
 import {

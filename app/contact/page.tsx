@@ -1,3 +1,5 @@
+"use client";
+
 import { ContactForm } from "@/components/contact-form";
 import { useTranslation } from "@/components/language-provider";
 import {

@@ -49,8 +49,8 @@ export default function RootLayout({
           <Navigation />
           <main className="min-h-screen">{children}</main>
           <Footer />
-          <Toaster />
         </LanguageProvider>
+        <Toaster />
       </body>
     </html>
   );

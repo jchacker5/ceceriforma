@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslation } from "@/components/language-provider";
 import { Button } from "@/components/ui/button";
 import {
