@@ -86,4 +86,44 @@ export const es = {
     gainExperience: "Obtén experiencia valiosa en participación cívica",
     bePart: "Sé parte del cambio positivo en el 8º Distrito de Bristol",
   },
+  hero: {
+    heading: "Liderazgo de sentido común para la Costa Sur",
+    subheading:
+      "Steven V. Ceceri aporta décadas de experiencia y un compromiso con soluciones prácticas para el 8º Distrito de Bristol. Juntos, podemos construir un futuro más fuerte para Westport, Fall River, Freetown, Acushnet y New Bedford.",
+    readMyPlan: "Lee Mi Plan",
+    donateToday: "Dona Hoy",
+    district: "8º Distrito de Bristol",
+    districtAreas:
+      "Westport · Fall River Pcts A/C · Freetown · Acushnet · New Bedford",
+  },
+  issuesCarousel: {
+    heading: "Temas Clave",
+    subtitle:
+      "Soluciones de sentido común para los desafíos del 8º Distrito de Bristol",
+    previous: "Anterior",
+    next: "Siguiente",
+    viewAll: "Ver Todos los Temas",
+  },
+  testimonials: {
+    heading: "Lo que la gente está diciendo",
+    subtitle:
+      "Escuche a los líderes comunitarios que conocen el trabajo de Steven",
+    cta: "¿Quieres compartir tu historia?",
+    contactUs: "Contáctanos",
+  },
+  footer: {
+    slogan: "Liderazgo de sentido común para la Costa Sur",
+    quickLinks: "Enlaces Rápidos",
+    getInvolved: "Involúcrate",
+    signUpVolunteer: "Regístrate para ser Voluntario",
+    contact: "Contacto",
+    campaignHeadquarters: "Sede de la Campaña",
+    rightsReserved: "Todos los derechos reservados.",
+    district: "8º Distrito de Bristol",
+    privacyPolicy: "Política de Privacidad",
+    termsOfService: "Términos de Servicio",
+    paidForBy: "Pagado por Steven V. Ceceri para Representante Estatal.",
+    disclaimer:
+      "Esta comunicación no está autorizada por ningún candidato o comité de candidato. Las contribuciones a Steven V. Ceceri para Representante Estatal no son deducibles de impuestos. La ley de Massachusetts requiere que recojamos y reportemos el nombre, dirección, ocupación y empleador de las personas cuyas contribuciones superen los $200 en un año calendario.",
+  },
 };
