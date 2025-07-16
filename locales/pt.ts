@@ -86,4 +86,43 @@ export const pt = {
     gainExperience: "Adquira experiência valiosa em engajamento cívico",
     bePart: "Faça parte da mudança positiva no 8º Distrito de Bristol",
   },
+  hero: {
+    heading: "Liderança de bom senso para a Costa Sul",
+    subheading:
+      "Steven V. Ceceri traz décadas de experiência e compromisso com soluções práticas para o 8º Distrito de Bristol. Juntos, podemos construir um futuro mais forte para Westport, Fall River, Freetown, Acushnet e New Bedford.",
+    readMyPlan: "Leia Meu Plano",
+    donateToday: "Doe Hoje",
+    district: "8º Distrito de Bristol",
+    districtAreas:
+      "Westport · Fall River Pcts A/C · Freetown · Acushnet · New Bedford",
+  },
+  issuesCarousel: {
+    heading: "Questões Principais",
+    subtitle:
+      "Soluções de bom senso para os desafios do 8º Distrito de Bristol",
+    previous: "Anterior",
+    next: "Próximo",
+    viewAll: "Ver Todas as Questões",
+  },
+  testimonials: {
+    heading: "O que as pessoas estão dizendo",
+    subtitle: "Ouça líderes comunitários que conhecem o trabalho de Steven",
+    cta: "Quer compartilhar sua história?",
+    contactUs: "Fale conosco",
+  },
+  footer: {
+    slogan: "Liderança de bom senso para a Costa Sul",
+    quickLinks: "Links Rápidos",
+    getInvolved: "Envolva-se",
+    signUpVolunteer: "Inscreva-se para Voluntário",
+    contact: "Contato",
+    campaignHeadquarters: "Sede da Campanha",
+    rightsReserved: "Todos os direitos reservados.",
+    district: "8º Distrito de Bristol",
+    privacyPolicy: "Política de Privacidade",
+    termsOfService: "Termos de Serviço",
+    paidForBy: "Pago por Steven V. Ceceri para Deputado Estadual.",
+    disclaimer:
+      "Esta comunicação não é autorizada por nenhum candidato ou comitê de candidato. Contribuições para Steven V. Ceceri para Deputado Estadual não são dedutíveis de impostos. A lei de Massachusetts exige que coletemos e informemos o nome, endereço, ocupação e empregador de indivíduos cujas contribuições excedam $200 em um ano civil.",
+  },
 };
