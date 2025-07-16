@@ -1,8 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { useTranslation } from "@/components/language-provider";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
+  const { t } = useTranslation();
   return (
     <section className="relative bg-gradient-to-br from-campaign-blue to-campaign-blue/80 text-white">
       <div className="absolute inset-0 bg-black/20"></div>
@@ -11,23 +13,32 @@ export function Hero() {
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight">
-                COMMON-SENSE LEADERSHIP FOR THE SOUTH COAST
+                {t.hero.heading}
               </h1>
               <p className="text-xl lg:text-2xl text-blue-100">
-                Steven Ceceri brings decades of experience and a commitment to practical solutions for the 8th Bristol District. Together, we can build a stronger future for Westport, Fall River, Freetown, Acushnet, and New Bedford.
+                {t.hero.subheading}
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8">
-                <Link href="/issues">Read My Plan</Link>
+              <Button
+                asChild
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8"
+              >
+                <Link href="/issues">{t.hero.readMyPlan}</Link>
               </Button>
-              <Button asChild size="lg" className="text-lg px-8 bg-campaign-red hover:bg-campaign-red/90">
-                <Link href="/donate">Donate Today</Link>
+              <Button
+                asChild
+                size="lg"
+                className="text-lg px-8 bg-campaign-red hover:bg-campaign-red/90"
+              >
+                <Link href="/donate">{t.hero.donateToday}</Link>
               </Button>
             </div>
             <div className="text-sm text-blue-100">
-              <p className="font-semibold">8th Bristol District</p>
-              <p>Westport · Fall River Pcts A/C · Freetown · Acushnet · New Bedford</p>
+              <p className="font-semibold">{t.hero.district}</p>
+              <p>{t.hero.districtAreas}</p>
             </div>
           </div>
           <div className="flex justify-center">
@@ -45,5 +56,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
