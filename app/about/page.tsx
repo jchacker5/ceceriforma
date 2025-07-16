@@ -1,8 +1,15 @@
-import Image from "next/image"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Download, Award, Users, Heart } from "lucide-react"
-import Link from "next/link"
+import { useTranslation } from "@/components/language-provider";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Award, Download, Heart, Users } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const timeline = [
   {
@@ -35,7 +42,7 @@ const timeline = [
     title: "Veterans Affairs Committee",
     description: "Volunteer coordinator for veteran support services",
   },
-]
+];
 
 const endorsements = [
   "South Coast Labor Council",
@@ -44,14 +51,19 @@ const endorsements = [
   "Massachusetts Police Association",
   "Environmental League of Massachusetts",
   "Small Business Association of MA",
-]
+];
 
 export default function AboutPage() {
+  const { t } = useTranslation();
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">About Steven V. Ceceri</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">A lifetime of service to the South Coast community</p>
+        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">
+          {t.about.title}
+        </h1>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          {t.about.subtitle}
+        </p>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-12 mb-16">
@@ -67,7 +79,7 @@ export default function AboutPage() {
             <Button asChild className="w-full bg-transparent" variant="outline">
               <Link href="/resume.pdf" target="_blank">
                 <Download className="h-4 w-4 mr-2" />
-                Download Resume
+                {t.about.downloadResume}
               </Link>
             </Button>
             <div className="text-center">
@@ -84,28 +96,36 @@ export default function AboutPage() {
 
         <div className="lg:col-span-2 space-y-8">
           <div>
-            <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">My Story</h2>
+            <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">
+              {t.about.myStory}
+            </h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p>
-                I was born and raised right here in the 8th Bristol District, and I've spent my entire adult life
-                serving this community that shaped me. After graduating from UMass Dartmouth, I started my own
-                construction business, creating good-paying jobs for local workers and contributing to the economic
-                vitality of our region.
+                I was born and raised right here in the 8th Bristol District,
+                and I've spent my entire adult life serving this community that
+                shaped me. After graduating from UMass Dartmouth, I started my
+                own construction business, creating good-paying jobs for local
+                workers and contributing to the economic vitality of our region.
               </p>
               <p>
-                My commitment to public service began when I was elected to the local school committee, where I fought
-                for educational excellence and fiscal responsibility. This experience taught me the importance of
-                listening to constituents and making decisions based on facts, not politics.
+                My commitment to public service began when I was elected to the
+                local school committee, where I fought for educational
+                excellence and fiscal responsibility. This experience taught me
+                the importance of listening to constituents and making decisions
+                based on facts, not politics.
               </p>
               <p>
-                As a town selectman for over a decade, I learned how to bring people together to solve problems. Whether
-                it was improving our infrastructure, supporting local businesses, or ensuring public safety, I've always
-                believed in common-sense solutions that work for everyone.
+                As a town selectman for over a decade, I learned how to bring
+                people together to solve problems. Whether it was improving our
+                infrastructure, supporting local businesses, or ensuring public
+                safety, I've always believed in common-sense solutions that work
+                for everyone.
               </p>
               <p>
-                Now, I'm ready to take that same approach to Beacon Hill. The 8th Bristol District deserves a
-                representative who understands our challenges because he's lived them, and who has the experience to get
-                things done.
+                Now, I'm ready to take that same approach to Beacon Hill. The
+                8th Bristol District deserves a representative who understands
+                our challenges because he's lived them, and who has the
+                experience to get things done.
               </p>
             </div>
           </div>
@@ -116,11 +136,14 @@ export default function AboutPage() {
                 <div className="mx-auto p-3 bg-campaign-blue/10 rounded-full w-fit mb-2">
                   <Users className="h-8 w-8 text-campaign-blue" />
                 </div>
-                <CardTitle className="text-lg">Community Leader</CardTitle>
+                <CardTitle className="text-lg">
+                  {t.about.communityLeader}
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center">
-                  Over 30 years of active involvement in local organizations and civic groups
+                  Over 30 years of active involvement in local organizations and
+                  civic groups
                 </CardDescription>
               </CardContent>
             </Card>
@@ -130,11 +153,14 @@ export default function AboutPage() {
                 <div className="mx-auto p-3 bg-campaign-blue/10 rounded-full w-fit mb-2">
                   <Award className="h-8 w-8 text-campaign-blue" />
                 </div>
-                <CardTitle className="text-lg">Proven Results</CardTitle>
+                <CardTitle className="text-lg">
+                  {t.about.provenResults}
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center">
-                  Track record of successful projects and initiatives that benefit our community
+                  Track record of successful projects and initiatives that
+                  benefit our community
                 </CardDescription>
               </CardContent>
             </Card>
@@ -144,7 +170,9 @@ export default function AboutPage() {
                 <div className="mx-auto p-3 bg-campaign-blue/10 rounded-full w-fit mb-2">
                   <Heart className="h-8 w-8 text-campaign-blue" />
                 </div>
-                <CardTitle className="text-lg">Family Values</CardTitle>
+                <CardTitle className="text-lg">
+                  {t.about.familyValues}
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center">
@@ -158,7 +186,9 @@ export default function AboutPage() {
 
       <div className="grid lg:grid-cols-2 gap-12">
         <div>
-          <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">Career Timeline</h2>
+          <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">
+            {t.about.careerTimeline}
+          </h2>
           <div className="space-y-6">
             {timeline.map((item, index) => (
               <div key={index} className="flex space-x-4">
@@ -169,7 +199,9 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">{item.title}</h3>
-                  <p className="text-sm text-campaign-blue font-medium">{item.year}</p>
+                  <p className="text-sm text-campaign-blue font-medium">
+                    {item.year}
+                  </p>
                   <p className="text-gray-600 mt-1">{item.description}</p>
                 </div>
               </div>
@@ -178,10 +210,12 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">Endorsements</h2>
+          <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">
+            {t.about.endorsements}
+          </h2>
           <Card>
             <CardHeader>
-              <CardTitle>Proud to be Endorsed By:</CardTitle>
+              <CardTitle>{t.about.proudToBeEndorsed}</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
@@ -196,21 +230,24 @@ export default function AboutPage() {
           </Card>
 
           <div className="mt-8">
-            <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Personal Life</h3>
+            <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">
+              {t.about.personalLife}
+            </h3>
             <div className="prose text-gray-700">
               <p>
-                Steven lives in Westport with his wife of 35 years, Margaret. They have three adult children and five
-                grandchildren, all of whom live in the district. In his spare time, Steven enjoys fishing, woodworking,
-                and volunteering at the local food pantry.
+                Steven lives in Westport with his wife of 35 years, Margaret.
+                They have three adult children and five grandchildren, all of
+                whom live in the district. In his spare time, Steven enjoys
+                fishing, woodworking, and volunteering at the local food pantry.
               </p>
               <p>
-                He is an active member of St. John the Baptist Church and serves on the board of the South Coast
-                Community Foundation.
+                He is an active member of St. John the Baptist Church and serves
+                on the board of the South Coast Community Foundation.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

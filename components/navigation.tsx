@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "@/components/language-provider";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -19,7 +20,7 @@ const languages = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [lang, setLang] = useState("en");
+  const { lang, setLang, t } = useTranslation();
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -48,7 +49,11 @@ export function Navigation() {
                 href={item.href}
                 className="text-gray-700 hover:text-campaign-blue transition-colors"
               >
-                {item.label}
+                {
+                  t.navigation[
+                    item.label.toLowerCase() as keyof typeof t.navigation
+                  ]
+                }
               </Link>
             ))}
             {/* Language Switcher */}
@@ -67,7 +72,7 @@ export function Navigation() {
                 {languages.map((l) => (
                   <DropdownMenuItem
                     key={l.code}
-                    onClick={() => setLang(l.code)}
+                    onClick={() => setLang(l.code as "en" | "pt" | "es")}
                     className={
                       lang === l.code ? "font-bold text-campaign-blue" : ""
                     }

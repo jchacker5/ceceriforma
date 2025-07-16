@@ -1,5 +1,12 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Quote } from "lucide-react"
+import { useTranslation } from "@/components/language-provider";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Quote } from "lucide-react";
 
 const testimonials = [
   {
@@ -29,15 +36,18 @@ const testimonials = [
       "Education has always been a priority for Steven. He's fought for increased funding and resources for our schools. Our students benefit from his dedication to educational excellence.",
     location: "Freetown",
   },
-]
+];
 
 export function Testimonials() {
+  const { t } = useTranslation();
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">What People Are Saying</h2>
-          <p className="text-lg text-gray-600">Hear from community leaders who know Steven's work</p>
+          <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+            {t.testimonials.heading}
+          </h2>
+          <p className="text-lg text-gray-600">{t.testimonials.subtitle}</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -46,13 +56,17 @@ export function Testimonials() {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
-                    <CardTitle className="text-lg">{testimonial.name}</CardTitle>
+                    <CardTitle className="text-lg">
+                      {testimonial.name}
+                    </CardTitle>
                     <CardDescription className="text-sm">
                       {testimonial.title}
                       {testimonial.organization && (
                         <>
                           <br />
-                          <span className="font-medium">{testimonial.organization}</span>
+                          <span className="font-medium">
+                            {testimonial.organization}
+                          </span>
                         </>
                       )}
                     </CardDescription>
@@ -61,8 +75,12 @@ export function Testimonials() {
                 </div>
               </CardHeader>
               <CardContent>
-                <blockquote className="text-gray-700 italic mb-4">"{testimonial.content}"</blockquote>
-                <div className="text-sm text-gray-500">— {testimonial.location}</div>
+                <blockquote className="text-gray-700 italic mb-4">
+                  "{testimonial.content}"
+                </blockquote>
+                <div className="text-sm text-gray-500">
+                  — {testimonial.location}
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -70,13 +88,16 @@ export function Testimonials() {
 
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-2 text-sm text-gray-600">
-            <span>Want to share your story?</span>
-            <a href="/contact" className="text-campaign-blue hover:underline font-medium">
-              Contact us
+            <span>{t.testimonials.cta}</span>
+            <a
+              href="/contact"
+              className="text-campaign-blue hover:underline font-medium"
+            >
+              {t.testimonials.contactUs}
             </a>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

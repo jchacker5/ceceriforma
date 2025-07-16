@@ -1,5 +1,17 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { useTranslation } from "@/components/language-provider";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const issues = [
   {
@@ -72,14 +84,17 @@ Those who served our country deserve our continued service to them.`,
 
 We must be good stewards of our environment for future generations.`,
   },
-]
+];
 
 export default function IssuesPage() {
+  const { t } = useTranslation();
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">Issues & Priorities</h1>
-        <p className="text-xl text-gray-600">Common-sense solutions for the challenges facing our district</p>
+        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">
+          {t.issues.title}
+        </h1>
+        <p className="text-xl text-gray-600">{t.issues.subtitle}</p>
       </div>
 
       <Accordion type="single" collapsible className="space-y-4">
@@ -88,8 +103,12 @@ export default function IssuesPage() {
             <Card>
               <AccordionTrigger className="px-6 py-4 hover:no-underline">
                 <CardHeader className="p-0 text-left">
-                  <CardTitle className="text-xl text-campaign-blue">{issue.title}</CardTitle>
-                  <CardDescription className="text-base">{issue.description}</CardDescription>
+                  <CardTitle className="text-xl text-campaign-blue">
+                    {issue.title}
+                  </CardTitle>
+                  <CardDescription className="text-base">
+                    {issue.description}
+                  </CardDescription>
                 </CardHeader>
               </AccordionTrigger>
               <AccordionContent>
@@ -108,5 +127,5 @@ export default function IssuesPage() {
         ))}
       </Accordion>
     </div>
-  )
+  );
 }
