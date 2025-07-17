@@ -101,7 +101,7 @@ export function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-300 text-sm">
-              <p>&copy; 2024 Steven V. Ceceri for State Representative. All rights reserved.</p>
+              <p>© 2025 Steven Ceceri for State Representative. All rights reserved.</p>
               <p className="mt-1">
                 8th Bristol District - Westport · Fall River Pcts A/C · Freetown · Acushnet · New Bedford
               </p>
