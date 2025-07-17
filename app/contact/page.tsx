@@ -27,8 +27,16 @@ export default function ContactPage() {
                 <p>1822 North Main Street, second floor Annex Suite 001</p>
                 <p>Fall River, MA 02720</p>
               </div>
-              <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-500">Interactive Map Placeholder</p>
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <iframe
+                  src="https://maps.google.com/maps?q=1822%20North%20Main%20Street,%20Fall%20River,%20MA%2002720&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  className="w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Campaign Headquarters Location"
+                ></iframe>
               </div>
             </CardContent>
           </Card>
@@ -42,7 +50,7 @@ export default function ContactPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold">(508) 555-0123</p>
+                <p className="text-lg font-semibold">(401) 419-1781</p>
                 <p className="text-sm text-gray-600">Campaign Office</p>
               </CardContent>
             </Card>
@@ -55,7 +63,7 @@ export default function ContactPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold">info@ceceriforma.com</p>
+                <p className="text-lg font-semibold">steven@ceceriforma.com</p>
                 <p className="text-sm text-gray-600">General Inquiries</p>
               </CardContent>
             </Card>

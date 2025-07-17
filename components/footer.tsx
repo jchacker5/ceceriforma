@@ -10,13 +10,13 @@ export function Footer() {
             <h3 className="font-heading font-bold text-xl">CECERI FOR STATE REP</h3>
             <p className="text-gray-300">Common-sense leadership for the South Coast</p>
             <div className="flex space-x-4">
-              <Link href="https://facebook.com/cecerep" className="text-gray-300 hover:text-white">
+              <Link href="https://facebook.com" className="text-gray-300 hover:text-white">
                 <Facebook className="h-5 w-5" />
               </Link>
               <Link href="https://x.com/StevenCeceri" className="text-gray-300 hover:text-white">
                 <X className="h-5 w-5" />
               </Link>
-              <Link href="https://instagram.com/cecerep" className="text-gray-300 hover:text-white">
+              <Link href="https://instagram.com" className="text-gray-300 hover:text-white">
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link href="https://youtube.com/@cecerep" className="text-gray-300 hover:text-white"></Link>
