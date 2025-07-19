@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Download, Users, Heart, Wrench, ShieldCheck } from "lucide-react"
 import Link from "next/link"
+import { useTranslation } from "@/components/language-provider"
 
 const timeline = [
   {
@@ -44,11 +47,13 @@ const timeline = [
 // ]
 
 export default function AboutPage() {
+  const { t } = useTranslation();
+  
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">About Steven V. Ceceri</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">A lifetime of service and hands-on problem-solving</p>
+        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">{t.about.title}</h1>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t.about.subtitle}</p>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-12 mb-16">
@@ -64,7 +69,7 @@ export default function AboutPage() {
             <Button asChild className="w-full bg-transparent" variant="outline">
               <Link href="/resume.pdf" target="_blank">
                 <Download className="h-4 w-4 mr-2" />
-                Download Resume
+                {t.about.downloadResume}
               </Link>
             </Button>
           </div>
@@ -72,7 +77,7 @@ export default function AboutPage() {
 
         <div className="lg:col-span-2 space-y-8">
           <div>
-            <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">My Story</h2>
+            <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">{t.about.myStory}</h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p>
                 For over 30 years, I&apos;ve dedicated myself to serving the people of the South Coast—not just in public

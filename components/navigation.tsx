@@ -11,8 +11,9 @@ import {
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { SupportedLanguage } from "@/types/translations";
 
-const languages = [
+const languages: Array<{ code: SupportedLanguage; label: string }> = [
   { code: "en", label: "EN" },
   { code: "pt", label: "PT" },
   { code: "es", label: "ES" },
@@ -68,7 +69,7 @@ export function Navigation() {
                 {languages.map((l) => (
                   <DropdownMenuItem
                     key={l.code}
-                    onClick={() => setLang(l.code as "en" | "pt" | "es")}
+                    onClick={() => setLang(l.code)}
                     className={
                       lang === l.code ? "font-bold text-campaign-blue" : ""
                     }
@@ -139,7 +140,7 @@ export function Navigation() {
                     {languages.map((l) => (
                       <DropdownMenuItem
                         key={l.code}
-                        onClick={() => setLang(l.code as "en" | "pt" | "es")}
+                        onClick={() => setLang(l.code)}
                         className={
                           lang === l.code ? "font-bold text-campaign-blue" : ""
                         }

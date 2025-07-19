@@ -86,9 +86,9 @@ export const en = {
     bePart: "Be part of positive change in the 8th Bristol District",
   },
   hero: {
-    heading: "Common-sense leadership for the South Coast",
+    heading: "COMMON-SENSE LEADERSHIP FOR THE SOUTH COAST",
     subheading:
-      "Steven V. Ceceri brings decades of experience and a commitment to practical solutions for the 8th Bristol District. Together, we can build a stronger future for Westport, Fall River, Freetown, Acushnet, and New Bedford.",
+      "Steven Ceceri brings decades of experience and a commitment to practical solutions for the 8th Bristol District. Together, we can build a stronger future for Westport, Fall River, Freetown, Acushnet, and New Bedford.",
     readMyPlan: "Read My Plan",
     donateToday: "Donate Today",
     district: "8th Bristol District",

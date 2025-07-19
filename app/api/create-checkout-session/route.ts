@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
   }
 
   const stripe = new Stripe(stripeKey, {
-    apiVersion: "2024-06-20",
+    apiVersion: "2025-06-30.basil",
   })
 
   try {

@@ -1,14 +1,19 @@
+"use client";
+
 import { ContactForm } from "@/components/contact-form"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { useTranslation } from "@/components/language-provider"
 
 export default function ContactPage() {
+  const { t } = useTranslation();
+  
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">Contact Us</h1>
+        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">{t.contact.title}</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          We want to hear from you. Reach out with questions, concerns, or to get involved in the campaign.
+          {t.contact.subtitle}
         </p>
       </div>
 
@@ -18,7 +23,7 @@ export default function ContactPage() {
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5 text-campaign-blue" />
-                <span>Campaign Headquarters</span>
+                <span>{t.contact.headquarters}</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
