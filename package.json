@@ -12,6 +12,11 @@
     "test:coverage": "jest --coverage",
     "test:contact": "jest contact-api.test.tsx",
     "test:contact:watch": "jest contact-api.test.tsx --watch",
+    "test:forms": "jest forms-integration.test.tsx",
+    "test:forms:watch": "jest forms-integration.test.tsx --watch",
+    "test:all": "jest",
+    "test:forms-dev": "bash scripts/test-forms-dev.sh",
+    "validate-schema": "node scripts/validate-schema.js",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio"

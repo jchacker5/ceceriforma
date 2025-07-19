@@ -67,6 +67,41 @@ This is the official campaign website for Steven V. Ceceri, candidate for the Ma
 - **Start Production**: `pnpm start`
 - **Lint**: `pnpm lint`
 
+### Testing Forms Before Schema Migration
+
+Before pushing schema changes to Supabase, thoroughly test all forms:
+
+1. **Run automated tests**:
+
+   ```bash
+   # Test all forms integration
+   pnpm test:forms
+
+   # Test contact form specifically
+   pnpm test:contact
+
+   # Run comprehensive dev environment check
+   pnpm test:forms-dev
+   ```
+
+2. **Validate database schema**:
+
+   ```bash
+   pnpm validate-schema
+   ```
+
+3. **Manual testing checklist**:
+
+   - Use the checklist in `scripts/manual-test-checklist.md`
+   - Test all forms in browser at `http://localhost:3000`
+   - Verify email delivery, database saves, and Stripe integration
+
+4. **Generate and apply migrations**:
+   ```bash
+   pnpm db:generate  # Generate migration files
+   pnpm db:migrate   # Apply to database
+   ```
+
 The site uses Next.js App Router for routing, with pages in `/app/` and components in `/components/`.
 
 ## Contact Form Email Setup
