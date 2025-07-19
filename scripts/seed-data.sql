@@ -175,8 +175,8 @@ INSERT INTO testimonials (name, title, organization, content, location, featured
 
 -- Insert sample social media posts
 INSERT INTO social_posts (platform, content, published_at, external_url) VALUES
-('twitter', 'Great turnout at today''s town hall in Westport! Thank you to everyone who came out to discuss the issues that matter most to our community. Together, we can build a stronger future for the 8th Bristol District. #CeceriForStateRep', 
-'2024-01-15 15:30:00-05', 'https://twitter.com/cecerep/status/1'),
+('x', 'Great turnout at today''s town hall in Westport! Thank you to everyone who came out to discuss the issues that matter most to our community. Together, we can build a stronger future for the 8th Bristol District. #CeceriForStateRep', 
+'2024-01-15 15:30:00-05', 'https://x.com/StevenCeceri/status/1'),
 
 ('facebook', 'Small businesses are the backbone of our economy. That''s why I''m committed to reducing red tape and supporting local entrepreneurs. When our businesses thrive, our communities thrive.', 
 '2024-01-14 20:45:00-05', 'https://facebook.com/cecerep/posts/1'),
@@ -190,5 +190,5 @@ INSERT INTO social_posts (platform, content, published_at, external_url) VALUES
 ('youtube', 'Watch my latest video on public safety initiatives for our district. We need to support our first responders while building stronger community partnerships.', 
 '2024-01-11 21:00:00-05', 'https://youtube.com/watch?v=cecerep1'),
 
-('twitter', 'Veterans Day reminder: Our veterans deserve our unwavering support. I''m committed to expanding access to healthcare, job training, and housing assistance for those who served our country.', 
-'2024-01-10 16:00:00-05', 'https://twitter.com/cecerep/status/2');
+('x', 'Veterans Day reminder: Our veterans deserve our unwavering support. I''m committed to expanding access to healthcare, job training, and housing assistance for those who served our country.', 
+'2024-01-10 16:00:00-05', 'https://x.com/StevenCeceri/status/2');
