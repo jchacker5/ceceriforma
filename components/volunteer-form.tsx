@@ -68,7 +68,7 @@ export function VolunteerForm() {
       } else {
         throw new Error("Failed to submit form")
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Error",
         description: "There was a problem submitting your form. Please try again.",

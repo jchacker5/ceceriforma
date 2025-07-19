@@ -103,7 +103,7 @@ export default function ContactPage() {
             <CardHeader>
               <CardTitle className="text-2xl">Send Us a Message</CardTitle>
               <CardDescription>
-                Have a question or want to share your thoughts? We'd love to hear from you.
+                Have a question or want to share your thoughts? We&apos;d love to hear from you.
               </CardDescription>
             </CardHeader>
             <CardContent>

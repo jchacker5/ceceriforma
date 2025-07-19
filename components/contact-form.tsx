@@ -49,7 +49,7 @@ export function ContactForm() {
       } else {
         throw new Error("Failed to send message")
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Error",
         description: "There was a problem sending your message. Please try again.",

@@ -37,7 +37,7 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">What People Are Saying</h2>
-          <p className="text-lg text-gray-600">Hear from community leaders who know Steven's work</p>
+          <p className="text-lg text-gray-600">Hear from community leaders who know Steven&apos;s work</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -61,7 +61,7 @@ export function Testimonials() {
                 </div>
               </CardHeader>
               <CardContent>
-                <blockquote className="text-gray-700 italic mb-4">"{testimonial.content}"</blockquote>
+                <blockquote className="text-gray-700 italic mb-4">&quot;{testimonial.content}&quot;</blockquote>
                 <div className="text-sm text-gray-500">— {testimonial.location}</div>
               </CardContent>
             </Card>

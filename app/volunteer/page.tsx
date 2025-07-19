@@ -6,7 +6,7 @@ const volunteerOpportunities = [
   {
     icon: Users,
     title: "Canvassing",
-    description: "Go door-to-door to meet voters and share Steven's message",
+    description: "Go door-to-door to meet voters and share Steven&apos;s message",
   },
   {
     icon: Phone,
@@ -79,7 +79,7 @@ export default function VolunteerPage() {
             <CardHeader>
               <CardTitle className="text-2xl">Sign Up to Volunteer</CardTitle>
               <CardDescription>
-                Fill out the form below and we'll be in touch with volunteer opportunities that match your interests and
+                Fill out the form below and we&apos;ll be in touch with volunteer opportunities that match your interests and
                 availability.
               </CardDescription>
             </CardHeader>

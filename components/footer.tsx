@@ -120,7 +120,7 @@ export function Footer() {
         <div className="mt-6 p-4 bg-gray-800 rounded-lg">
           <p className="text-xs text-gray-400">
             <strong>Paid for by Steven V. Ceceri for State Representative.</strong> This communication is not authorized
-            by any candidate or candidate's committee. Contributions to Steven V. Ceceri for State Representative are
+            by any candidate or candidate&apos;s committee. Contributions to Steven V. Ceceri for State Representative are
             not tax-deductible. Massachusetts law requires us to collect and report the name, address, occupation, and
             employer of individuals whose contributions exceed $200 in a calendar year.
           </p>

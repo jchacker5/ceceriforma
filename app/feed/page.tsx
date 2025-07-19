@@ -27,7 +27,7 @@ export default function FeedPage() {
 
       {/* In a real application, an "infinite scroll" or "load more" button would be implemented here */}
       <div className="text-center mt-12">
-        <p className="text-gray-500">You've reached the end of the feed.</p>
+        <p className="text-gray-500">You&apos;ve reached the end of the feed.</p>
       </div>
     </div>
   )

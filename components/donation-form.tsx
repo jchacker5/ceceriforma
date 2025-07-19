@@ -80,7 +80,7 @@ export function DonationForm() {
       } else {
         throw new Error("Failed to create checkout session")
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Error",
         description: "There was a problem processing your donation. Please try again.",
