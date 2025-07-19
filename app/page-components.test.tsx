@@ -83,9 +83,9 @@ jest.mock('lucide-react', () => ({
 }));
 
 // Test wrapper component that includes Language provider
-function TestWrapper({ children }: { children: React.ReactNode }) {
+const TestWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return <LanguageProvider>{children}</LanguageProvider>;
-}
+};
 
 describe('Page Components Language Integration', () => {
   beforeEach(() => {
