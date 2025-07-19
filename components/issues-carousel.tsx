@@ -72,7 +72,7 @@ export function IssuesCarousel() {
         <div className="relative">
           {/* Desktop view - show all cards */}
           <div className="hidden lg:grid lg:grid-cols-5 gap-6">
-            {issues.map((issue, index) => (
+            {issues.map((issue) => (
               <Card key={issue.id} className="hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <div className="text-4xl mb-2">{issue.icon}</div>
@@ -96,7 +96,7 @@ export function IssuesCarousel() {
                 className="flex transition-transform duration-300 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
-                {issues.map((issue, index) => (
+                {issues.map((issue) => (
                   <div key={issue.id} className="w-full flex-shrink-0 px-4">
                     <Card className="hover:shadow-lg transition-shadow">
                       <CardHeader className="text-center pb-4">
