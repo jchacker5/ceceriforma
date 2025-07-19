@@ -88,8 +88,11 @@ export const en = {
     subtitle:
       "Your contribution helps us reach voters, share our message, and build a stronger future for the 8th Bristol District. Every dollar makes a difference.",
     grassroots: "Grassroots Campaign",
+    grassrootsDescription: "Our campaign is powered by small donations from neighbors like you, not special interests or corporate PACs.",
     communityFirst: "Community First",
+    communityFirstDescription: "Your support helps us connect with voters and share our vision for common-sense leadership.",
     secureTransparent: "Secure & Transparent",
+    secureTransparentDescription: "All donations are processed securely and reported in accordance with Massachusetts campaign finance laws.",
     makeContribution: "Make a Contribution",
     chooseAmount: "Choose an amount below or enter a custom amount",
     financeDisclosure: "Campaign Finance Disclosure",

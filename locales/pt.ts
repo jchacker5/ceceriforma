@@ -88,8 +88,11 @@ export const pt = {
     subtitle:
       "Sua contribuição nos ajuda a alcançar eleitores, compartilhar nossa mensagem e construir um futuro mais forte para o 8º Distrito de Bristol. Cada dólar faz a diferença.",
     grassroots: "Campanha de Base",
+    grassrootsDescription: "Nossa campanha é impulsionada por pequenas doações de vizinhos como você, não por interesses especiais ou PACs corporativos.",
     communityFirst: "Comunidade em Primeiro Lugar",
+    communityFirstDescription: "Seu apoio nos ajuda a conectar com eleitores e compartilhar nossa visão de liderança de bom senso.",
     secureTransparent: "Seguro e Transparente",
+    secureTransparentDescription: "Todas as doações são processadas com segurança e reportadas de acordo com as leis de financiamento de campanha de Massachusetts.",
     makeContribution: "Faça uma Contribuição",
     chooseAmount: "Escolha um valor abaixo ou insira um valor personalizado",
     financeDisclosure: "Divulgação de Financiamento de Campanha",
