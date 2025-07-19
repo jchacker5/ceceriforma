@@ -110,6 +110,24 @@ export const es = {
     meetNeighbors: "Conoce a vecinos afines y haz conexiones",
     gainExperience: "Obtén experiencia valiosa en participación cívica",
     bePart: "Sé parte del cambio positivo en el 8º Distrito de Bristol",
+    opportunities: {
+      canvassing: {
+        title: "Canveo",
+        description: "Ve de puerta en puerta para conocer a los votantes y compartir el mensaje de Steven",
+      },
+      phoneBank: {
+        title: "Banco Telefónico",
+        description: "Haz llamadas a votantes registrados desde la comodidad de tu hogar",
+      },
+      eventSupport: {
+        title: "Apoyo de Eventos",
+        description: "Ayuda a organizar y ejecutar eventos de campaña en todo el distrito",
+      },
+      digitalOutreach: {
+        title: "Divulgación Digital",
+        description: "Asiste con redes sociales, campañas de correo electrónico y participación en línea",
+      },
+    },
   },
   hero: {
     heading: "LIDERAZGO DE SENTIDO COMÚN PARA LA COSTA SUR",

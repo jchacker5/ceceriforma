@@ -109,6 +109,24 @@ export const en = {
     meetNeighbors: "Meet like-minded neighbors and build connections",
     gainExperience: "Gain valuable experience in civic engagement",
     bePart: "Be part of positive change in the 8th Bristol District",
+    opportunities: {
+      canvassing: {
+        title: "Canvassing",
+        description: "Go door-to-door to meet voters and share Steven's message",
+      },
+      phoneBank: {
+        title: "Phone Banking",
+        description: "Make calls to registered voters from the comfort of your home",
+      },
+      eventSupport: {
+        title: "Event Support",
+        description: "Help organize and run campaign events throughout the district",
+      },
+      digitalOutreach: {
+        title: "Digital Outreach",
+        description: "Assist with social media, email campaigns, and online engagement",
+      },
+    },
   },
   hero: {
     heading: "COMMON-SENSE LEADERSHIP FOR THE SOUTH COAST",
