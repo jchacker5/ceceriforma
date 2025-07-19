@@ -21,7 +21,7 @@ export default function TermsOfServicePage() {
 
         <h2>2. Use of the Website</h2>
         <p>
-          This Site is intended to provide information about Steven V. Ceceri's campaign for State Representative. You
+          This Site is intended to provide information about Steven V. Ceceri&apos;s campaign for State Representative. You
           agree to use the Site for lawful purposes only and in a manner that does not infringe the rights of, or
           restrict or inhibit the use and enjoyment of, this site by any third party.
         </p>
