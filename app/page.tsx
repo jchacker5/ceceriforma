@@ -7,10 +7,10 @@ import { Testimonials } from "@/components/testimonials"
 import { useTranslation } from "@/components/language-provider"
 
 export default function HomePage() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   
   return (
-    <div className="space-y-16">
+    <div key={lang} className="space-y-16">
       <Hero />
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">

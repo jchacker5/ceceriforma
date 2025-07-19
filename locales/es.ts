@@ -30,6 +30,31 @@ export const es = {
     title: "Temas y Prioridades",
     subtitle:
       "Soluciones de sentido común para los desafíos de nuestro distrito",
+    economy: {
+      title: "Economía y Empleos",
+      description: "Creando oportunidades para las familias trabajadoras",
+      content: "Nuestro distrito necesita empleos bien remunerados que permitan a las familias prosperar. Trabajaré para:\n\n• Apoyar a las pequeñas empresas con menos regulaciones e incentivos fiscales\n• Atraer nuevas industrias mientras preservamos nuestro patrimonio marítimo\n• Invertir en desarrollo de la fuerza laboral y programas de capacitación\n• Abogar por salarios justos y protecciones para los trabajadores\n• Promover el desarrollo económico que beneficie a todos los residentes\n\nLa Costa Sur tiene un tremendo potencial. Con las políticas correctas, podemos crear una economía que funcione para todos.",
+    },
+    education: {
+      title: "Educación",
+      description: "Invirtiendo en el futuro de nuestros hijos",
+      content: "Cada niño merece acceso a una educación de calidad. Mis prioridades incluyen:\n\n• Financiar completamente nuestras escuelas públicas y apoyar a nuestros maestros\n• Expandir el acceso a la educación infantil temprana\n• Mejorar la infraestructura escolar y la tecnología\n• Apoyar programas de educación vocacional y técnica\n• Hacer la educación superior más asequible y accesible\n\nLa educación es la base de las oportunidades. Debemos asegurar que cada estudiante tenga las herramientas que necesita para tener éxito.",
+    },
+    safety: {
+      title: "Seguridad Pública",
+      description: "Manteniendo nuestras comunidades seguras",
+      content: "Las comunidades seguras son la base de vecindarios fuertes. Yo haré:\n\n• Apoyar a nuestra policía, bomberos y servicios de emergencia con financiamiento adecuado\n• Abordar la crisis de opioides con programas de tratamiento y prevención\n• Mejorar las capacidades de preparación y respuesta de emergencia\n• Trabajar en mejoras de seguridad vial en todo el distrito\n• Apoyar iniciativas de policía comunitaria que construyan confianza\n\nLa seguridad pública requiere asociación entre las fuerzas del orden y la comunidad.",
+    },
+    veterans: {
+      title: "Veteranos",
+      description: "Honrando a quienes sirvieron",
+      content: "Nuestros veteranos merecen nuestro apoyo inquebrantable. Estoy comprometido a:\n\n• Expandir el acceso a la atención médica y servicios de salud mental para veteranos\n• Apoyar programas de capacitación laboral y colocación para veteranos\n• Mejorar los programas de asistencia de vivienda para veteranos\n• Asegurar financiamiento adecuado para los servicios de veteranos\n• Honrar a nuestros veteranos a través de programas de reconocimiento comunitario\n\nQuienes sirvieron a nuestro país merecen nuestro servicio continuo hacia ellos.",
+    },
+    environment: {
+      title: "Medio Ambiente",
+      description: "Protegiendo nuestros recursos naturales",
+      content: "La belleza natural de la Costa Sur es uno de nuestros mayores activos. Yo haré:\n\n• Proteger nuestras vías fluviales y áreas costeras de la contaminación\n• Apoyar iniciativas de energía renovable y empleos verdes\n• Preservar espacios abiertos y áreas recreativas\n• Abordar los impactos del cambio climático en nuestras comunidades costeras\n• Promover prácticas de desarrollo sostenible\n\nDebemos ser buenos administradores de nuestro medio ambiente para las generaciones futuras.",
+    },
   },
   events: {
     title: "Eventos de la Campaña",
@@ -87,9 +112,9 @@ export const es = {
     bePart: "Sé parte del cambio positivo en el 8º Distrito de Bristol",
   },
   hero: {
-    heading: "Liderazgo de sentido común para la Costa Sur",
+    heading: "LIDERAZGO DE SENTIDO COMÚN PARA LA COSTA SUR",
     subheading:
-      "Steven V. Ceceri aporta décadas de experiencia y un compromiso con soluciones prácticas para el 8º Distrito de Bristol. Juntos, podemos construir un futuro más fuerte para Westport, Fall River, Freetown, Acushnet y New Bedford.",
+      "Steven Ceceri aporta décadas de experiencia y un compromiso con soluciones prácticas para el 8º Distrito de Bristol. Juntos, podemos construir un futuro más fuerte para Westport, Fall River, Freetown, Acushnet y New Bedford.",
     readMyPlan: "Lee Mi Plan",
     donateToday: "Dona Hoy",
     district: "8º Distrito de Bristol",

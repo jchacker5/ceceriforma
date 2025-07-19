@@ -23,6 +23,11 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const { lang, setLang, t } = useTranslation();
 
+  const handleLanguageChange = (newLang: SupportedLanguage) => {
+    console.log('Changing language from', lang, 'to', newLang);
+    setLang(newLang);
+  };
+
   const navItems = [
     { href: "/", label: "home" },
     { href: "/feed", label: "feed" },
@@ -69,7 +74,7 @@ export function Navigation() {
                 {languages.map((l) => (
                   <DropdownMenuItem
                     key={l.code}
-                    onClick={() => setLang(l.code)}
+                    onClick={() => handleLanguageChange(l.code)}
                     className={
                       lang === l.code ? "font-bold text-campaign-blue" : ""
                     }
@@ -140,7 +145,7 @@ export function Navigation() {
                     {languages.map((l) => (
                       <DropdownMenuItem
                         key={l.code}
-                        onClick={() => setLang(l.code)}
+                        onClick={() => handleLanguageChange(l.code)}
                         className={
                           lang === l.code ? "font-bold text-campaign-blue" : ""
                         }

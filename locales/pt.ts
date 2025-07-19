@@ -29,6 +29,31 @@ export const pt = {
   issues: {
     title: "Questões e Prioridades",
     subtitle: "Soluções de bom senso para os desafios do nosso distrito",
+    economy: {
+      title: "Economia e Empregos",
+      description: "Criando oportunidades para famílias trabalhadoras",
+      content: "Nosso distrito precisa de empregos bem remunerados que permitam às famílias prosperar. Trabalharei para:\n\n• Apoiar pequenas empresas com menos regulamentações e incentivos fiscais\n• Atrair novas indústrias preservando nosso patrimônio marítimo\n• Investir no desenvolvimento da força de trabalho e programas de treinamento\n• Defender salários justos e proteções para trabalhadores\n• Promover desenvolvimento econômico que beneficie todos os residentes\n\nA Costa Sul tem um potencial tremendo. Com as políticas certas, podemos criar uma economia que funcione para todos.",
+    },
+    education: {
+      title: "Educação",
+      description: "Investindo no futuro de nossas crianças",
+      content: "Toda criança merece acesso à educação de qualidade. Minhas prioridades incluem:\n\n• Financiar completamente nossas escolas públicas e apoiar nossos professores\n• Expandir o acesso à educação infantil precoce\n• Melhorar a infraestrutura escolar e tecnologia\n• Apoiar programas de educação vocacional e técnica\n• Tornar o ensino superior mais acessível e disponível\n\nA educação é a base das oportunidades. Devemos garantir que cada estudante tenha as ferramentas necessárias para ter sucesso.",
+    },
+    safety: {
+      title: "Segurança Pública",
+      description: "Mantendo nossas comunidades seguras",
+      content: "Comunidades seguras são a base de bairros fortes. Eu irei:\n\n• Apoiar nossa polícia, bombeiros e serviços de emergência com financiamento adequado\n• Abordar a crise dos opioides com programas de tratamento e prevenção\n• Melhorar as capacidades de preparação e resposta de emergência\n• Trabalhar em melhorias de segurança no trânsito em todo o distrito\n• Apoiar iniciativas de policiamento comunitário que constroem confiança\n\nA segurança pública requer parceria entre as forças da lei e a comunidade.",
+    },
+    veterans: {
+      title: "Veteranos",
+      description: "Honrando aqueles que serviram",
+      content: "Nossos veteranos merecem nosso apoio inabalável. Estou comprometido a:\n\n• Expandir o acesso aos cuidados de saúde e serviços de saúde mental para veteranos\n• Apoiar programas de treinamento profissional e colocação para veteranos\n• Melhorar os programas de assistência habitacional para veteranos\n• Garantir financiamento adequado para serviços de veteranos\n• Honrar nossos veteranos através de programas de reconhecimento comunitário\n\nAqueles que serviram nosso país merecem nosso serviço contínuo a eles.",
+    },
+    environment: {
+      title: "Meio Ambiente",
+      description: "Protegendo nossos recursos naturais",
+      content: "A beleza natural da Costa Sul é um de nossos maiores patrimônios. Eu irei:\n\n• Proteger nossas vias navegáveis e áreas costeiras da poluição\n• Apoiar iniciativas de energia renovável e empregos verdes\n• Preservar espaços abertos e áreas recreativas\n• Abordar os impactos das mudanças climáticas em nossas comunidades costeiras\n• Promover práticas de desenvolvimento sustentável\n\nDevemos ser bons administradores de nosso meio ambiente para as gerações futuras.",
+    },
   },
   events: {
     title: "Eventos da Campanha",
@@ -87,9 +112,9 @@ export const pt = {
     bePart: "Faça parte da mudança positiva no 8º Distrito de Bristol",
   },
   hero: {
-    heading: "Liderança de bom senso para a Costa Sul",
+    heading: "LIDERANÇA DE BOM SENSO PARA A COSTA SUL",
     subheading:
-      "Steven V. Ceceri traz décadas de experiência e compromisso com soluções práticas para o 8º Distrito de Bristol. Juntos, podemos construir um futuro mais forte para Westport, Fall River, Freetown, Acushnet e New Bedford.",
+      "Steven Ceceri traz décadas de experiência e compromisso com soluções práticas para o 8º Distrito de Bristol. Juntos, podemos construir um futuro mais forte para Westport, Fall River, Freetown, Acushnet e New Bedford.",
     readMyPlan: "Leia Meu Plano",
     donateToday: "Doe Hoje",
     district: "8º Distrito de Bristol",

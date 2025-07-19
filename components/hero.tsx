@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/components/language-provider"
 
 export function Hero() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   
   return (
     <section className="relative bg-gradient-to-br from-campaign-blue to-campaign-blue/80 text-white">
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="flex flex-col-reverse items-center gap-8 lg:grid lg:grid-cols-2 lg:gap-12">
-          <div className="space-y-8 text-center lg:text-left">
+          <div key={lang} className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight">
                 {t.hero.heading}
