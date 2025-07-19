@@ -11,7 +11,10 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:contact": "jest contact-api.test.tsx",
-    "test:contact:watch": "jest contact-api.test.tsx --watch"
+    "test:contact:watch": "jest contact-api.test.tsx --watch",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
