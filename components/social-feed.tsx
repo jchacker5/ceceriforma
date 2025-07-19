@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, X, Facebook, Instagram, Youtube } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 interface SocialPost {
   id: string
@@ -160,9 +161,11 @@ export function SocialFeed({ limit }: SocialFeedProps) {
             </CardHeader>
             <CardContent className="space-y-4">
               {post.media_url && (
-                <img
+                <Image
                   src={post.media_url || "/placeholder.svg"}
                   alt="Post media"
+                  width={400}
+                  height={192}
                   className="w-full h-48 object-cover rounded-lg"
                 />
               )}

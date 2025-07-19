@@ -8,8 +8,8 @@ export default function TermsOfServicePage() {
 
       <div className="prose prose-lg max-w-none text-gray-700">
         <p>
-          Please read these Terms of Service ("Terms") carefully before using the ceceriforma.com website (the "Site")
-          operated by the Steven V. Ceceri for State Representative campaign ("us," "we," or "our"). Your access to and
+          Please read these Terms of Service (&quot;Terms&quot;) carefully before using the ceceriforma.com website (the &quot;Site&quot;)
+          operated by the Steven V. Ceceri for State Representative campaign (&quot;us,&quot; &quot;we,&quot; or &quot;our&quot;). Your access to and
           use of the Site is conditioned upon your acceptance of and compliance with these Terms.
         </p>
 
@@ -21,7 +21,7 @@ export default function TermsOfServicePage() {
 
         <h2>2. Use of the Website</h2>
         <p>
-          This Site is intended to provide information about Steven V. Ceceri's campaign for State Representative. You
+          This Site is intended to provide information about Steven V. Ceceri&apos;s campaign for State Representative. You
           agree to use the Site for lawful purposes only and in a manner that does not infringe the rights of, or
           restrict or inhibit the use and enjoyment of, this site by any third party.
         </p>
@@ -44,7 +44,7 @@ export default function TermsOfServicePage() {
 
         <h2>5. Disclaimer</h2>
         <p>
-          Your use of the Site is at your sole risk. The Site is provided on an "AS IS" and "AS AVAILABLE" basis. The
+          Your use of the Site is at your sole risk. The Site is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. The
           Site is provided without warranties of any kind, whether express or implied, including, but not limited to,
           implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of
           performance.

@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Download, Users, Heart, Wrench, ShieldCheck } from "lucide-react"
 import Link from "next/link"
+import { useTranslation } from "@/components/language-provider"
 
 const timeline = [
   {
@@ -33,21 +36,24 @@ const timeline = [
   },
 ]
 
-const endorsements = [
-  "South Coast Labor Council",
-  "Massachusetts Teachers Association",
-  "Professional Fire Fighters of Massachusetts",
-  "Massachusetts Police Association",
-  "Environmental League of Massachusetts",
-  "Small Business Association of MA",
-]
+// Endorsements list - currently unused but may be displayed in future
+// const endorsements = [
+//   "South Coast Labor Council",
+//   "Massachusetts Teachers Association",
+//   "Professional Fire Fighters of Massachusetts",
+//   "Massachusetts Police Association",
+//   "Environmental League of Massachusetts",
+//   "Small Business Association of MA",
+// ]
 
 export default function AboutPage() {
+  const { t } = useTranslation();
+  
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">About Steven V. Ceceri</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">A lifetime of service and hands-on problem-solving</p>
+        <h1 className="text-4xl font-heading font-bold text-gray-900 mb-4">{t.about.title}</h1>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t.about.subtitle}</p>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-12 mb-16">
@@ -63,7 +69,7 @@ export default function AboutPage() {
             <Button asChild className="w-full bg-transparent" variant="outline">
               <Link href="/resume.pdf" target="_blank">
                 <Download className="h-4 w-4 mr-2" />
-                Download Resume
+                {t.about.downloadResume}
               </Link>
             </Button>
           </div>
@@ -71,24 +77,24 @@ export default function AboutPage() {
 
         <div className="lg:col-span-2 space-y-8">
           <div>
-            <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">My Story</h2>
+            <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">{t.about.myStory}</h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p>
-                For over 30 years, I've dedicated myself to serving the people of the South Coast—not just in public
+                For over 30 years, I&apos;ve dedicated myself to serving the people of the South Coast—not just in public
                 office, but on the ground, helping families and businesses through their most difficult times. As the
-                owner of a property damage restoration company, I don't just talk about problems; I go into homes after
+                owner of a property damage restoration company, I don&apos;t just talk about problems; I go into homes after
                 a storm or a pipe burst and help people put their lives back together.
               </p>
               <p>
                 I work with property owners to identify the full scope of damage, both seen and unseen. I stand up for
                 them, presenting my findings to insurance companies to ensure they get the resources they need to fully
-                recover. This experience has taught me how to navigate complex regulations and fight for what's
-                right—skills I'll take directly to the State House.
+                recover. This experience has taught me how to navigate complex regulations and fight for what&apos;s
+                right—skills I&apos;ll take directly to the State House.
               </p>
               <p>
                 This hands-on experience complements my long history in public service, from the local school committee
                 to the board of selectmen. I understand both the challenges facing our small businesses and the need for
-                strong, responsive government. I'm running for State Representative to be a problem-solver who is not
+                strong, responsive government. I&apos;m running for State Representative to be a problem-solver who is not
                 afraid to get his hands dirty to deliver results for the 8th Bristol District.
               </p>
             </div>

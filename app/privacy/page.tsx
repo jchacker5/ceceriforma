@@ -8,9 +8,9 @@ export default function PrivacyPolicyPage() {
 
       <div className="prose prose-lg max-w-none text-gray-700">
         <p>
-          The Steven V. Ceceri for State Representative campaign ("we," "us," or "our") is committed to protecting your
+          The Steven V. Ceceri for State Representative campaign (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting your
           privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our
-          website, ceceriforma.com (the "Site").
+          website, ceceriforma.com (the &quot;Site&quot;).
         </p>
 
         <h2>Information We Collect</h2>
