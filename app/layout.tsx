@@ -5,6 +5,7 @@ import { Inter, Merriweather_Sans } from "next/font/google"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
+import { LanguageProvider } from "@/components/language-provider"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,10 +47,12 @@ export default function RootLayout({
         <meta name="theme-color" content="#0E4D92" />
       </head>
       <body className={inter.className} suppressHydrationWarning>
-        <Navigation />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <Toaster />
+        <LanguageProvider>
+          <Navigation />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+          <Toaster />
+        </LanguageProvider>
       </body>
     </html>
   )
