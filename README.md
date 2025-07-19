@@ -108,6 +108,86 @@ The site uses Next.js App Router for routing, with pages in `/app/` and componen
 
 The contact form uses Gmail SMTP with an App Password for reliable email delivery.
 
+## Community Events Cron Job
+
+The website automatically updates community events for all cities in the 8th Bristol District every 6 hours using a Vercel cron job.
+
+### How It Works
+
+1. **Automatic Updates**: Runs every 6 hours via Vercel cron job
+2. **Multi-Source Scraping**: Fetches events from municipal websites, libraries, museums, and theaters
+3. **Eventbrite Integration**: Optional API integration for additional events
+4. **Database Storage**: All events are stored in the Drizzle database
+5. **Auto-Cleanup**: Removes events older than 30 days
+
+### Cities Covered
+
+- **Westport**: Town website, library
+- **Fall River**: City website, library, Battleship Cove
+- **Freetown**: Town website, library
+- **Acushnet**: Town website, library
+- **New Bedford**: City website, library, Whaling Museum, Zeiterion Theatre
+
+### Environment Variables
+
+Add these to your `.env.local` and Vercel:
+
+```bash
+# Cron job security
+CRON_SECRET=your-secret-key-here
+
+# Optional: Eventbrite API for additional events
+EVENTBRITE_API_KEY=your-eventbrite-api-key
+```
+
+### Manual Testing
+
+Test the cron job manually:
+
+```bash
+# Test all cities
+./scripts/test-cron-job.sh
+
+# Test specific city
+./scripts/test-cron-job.sh "New Bedford"
+```
+
+### Cron Job Schedule
+
+- **Frequency**: Every 6 hours (0 _/6 _ \* \*)
+- **Endpoint**: `/api/cron/update-events`
+- **Timeout**: 5 minutes
+- **Authentication**: Bearer token with `CRON_SECRET`
+
+### Event Sources
+
+The system scrapes events from:
+
+- Municipal government websites
+- Public libraries
+- Museums and cultural institutions
+- Theaters and performance venues
+- Eventbrite (optional)
+
+### Database Schema
+
+Events are stored with:
+
+- Title, description, dates
+- Location and address
+- Event type (community vs campaign)
+- Source URL and external ID
+- Automatic town detection
+
+### Monitoring
+
+Check cron job logs in Vercel dashboard:
+
+1. Go to your project in Vercel
+2. **Functions** tab
+3. Look for `/api/cron/update-events` function
+4. View execution logs and results
+
 ### Environment Variables
 
 Add these to your `.env.local` file:
