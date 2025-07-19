@@ -23,9 +23,14 @@ export const metadata: Metadata = {
   description:
     "Common-sense leadership for the South Coast. Vote Steven V. Ceceri for Massachusetts State Representative.",
   manifest: "/manifest.json",
+  generator: 'v0.dev'
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
   themeColor: "#0E4D92",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
