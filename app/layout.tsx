@@ -6,6 +6,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
 import { LanguageProvider } from "@/components/language-provider"
+import { PWAInstallProvider } from "@/components/pwa-install-provider"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -54,10 +55,12 @@ export default function RootLayout({
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <LanguageProvider>
-          <Navigation />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-          <Toaster />
+          <PWAInstallProvider>
+            <Navigation />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+            <Toaster />
+          </PWAInstallProvider>
         </LanguageProvider>
       </body>
     </html>
