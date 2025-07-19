@@ -18,6 +18,7 @@ export function ContactForm() {
     phone: "",
     subject: "",
     message: "",
+    website: "", // honeypot field
   })
   const { toast } = useToast()
 
@@ -45,6 +46,7 @@ export function ContactForm() {
           phone: "",
           subject: "",
           message: "",
+          website: "",
         })
       } else {
         throw new Error("Failed to send message")
@@ -125,6 +127,18 @@ export function ContactForm() {
           placeholder="Tell us how we can help you..."
           value={formData.message}
           onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
+        />
+      </div>
+
+      {/* Honeypot field - hidden from users but visible to bots */}
+      <div className="absolute left-[-9999px]">
+        <input
+          type="text"
+          name="website"
+          value={formData.website}
+          onChange={(e) => setFormData((prev) => ({ ...prev, website: e.target.value }))}
+          tabIndex={-1}
+          autoComplete="off"
         />
       </div>
 

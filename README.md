@@ -69,6 +69,47 @@ This is the official campaign website for Steven V. Ceceri, candidate for the Ma
 
 The site uses Next.js App Router for routing, with pages in `/app/` and components in `/components/`.
 
+## Contact Form Email Setup
+
+The contact form uses Gmail SMTP with an App Password for reliable email delivery.
+
+### Environment Variables
+
+Add these to your `.env.local` file:
+
+```bash
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_SECURE=true
+SMTP_USER=steve@ceceriforma.com
+SMTP_PASS=xxxx xxxx xxxx xxxx   # 16-char app password (remove spaces)
+CONTACT_TO=steve@ceceriforma.com
+CONTACT_FROM=steve@ceceriforma.com   # keep same domain to avoid spoof flags
+```
+
+### Gmail App Password Setup
+
+1. Ensure 2-Step Verification is enabled for `steve@ceceriforma.com`
+2. Visit https://myaccount.google.com/apppasswords while logged into Steve's account
+3. Create an "App Password" (select Other → name it "WebsiteContact")
+4. Copy the 16-character password (this is your SMTP password)
+5. Update the `SMTP_PASS` environment variable
+
+### DNS Configuration (Google Workspace)
+
+Ensure these DNS records are properly configured for deliverability:
+
+- **MX Records**: 5 Google MX records with priorities (1,5,5,10,10)
+- **SPF**: `v=spf1 include:_spf.google.com ~all`
+- **DKIM**: Generated through Google Admin Console
+- **DMARC**: `v=DMARC1; p=none; rua=mailto:dmarc@ceceriforma.com`
+
+### Maintenance
+
+- **Rotate App Passwords**: Google Account > Security > App Passwords > Delete old > Create new
+- **Update Vercel**: Update `SMTP_PASS` environment variable and redeploy
+- **Monitor**: All messages land in `steve@ceceriforma.com` inbox with subject prefix `[Contact]`
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps:

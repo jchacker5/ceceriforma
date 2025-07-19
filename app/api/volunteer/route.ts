@@ -1,36 +1,20 @@
 import { type NextRequest, NextResponse } from "next/server"
-import { createClient } from "@supabase/supabase-js"
+import { db } from "@/lib/db"
+import { volunteers } from "@/lib/db/schema"
 
 export async function POST(request: NextRequest) {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY
-
-  if (!supabaseUrl || !supabaseKey) {
-    console.error("Supabase environment variables are not set.")
-    return NextResponse.json({ error: "Database is not configured." }, { status: 500 })
-  }
-  const supabase = createClient(supabaseUrl, supabaseKey)
-
   try {
     const body = await request.json()
     const { name, email, phone, tasks, availability, message } = body
 
-    const { data, error } = await supabase.from("volunteers").insert([
-      {
-        name,
-        email,
-        phone,
-        preferred_tasks: tasks,
-        availability,
-        message,
-        created_at: new Date().toISOString(),
-      },
-    ])
-
-    if (error) {
-      console.error("Supabase error:", error)
-      return NextResponse.json({ error: "Database error" }, { status: 500 })
-    }
+    const data = await db.insert(volunteers).values({
+      name,
+      email,
+      phone,
+      preferredTasks: tasks,
+      availability,
+      message,
+    }).returning()
 
     return NextResponse.json({ success: true, data })
   } catch (error) {
